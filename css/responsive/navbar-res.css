@@ -1,0 +1,90 @@
+.buttom-navbar {
+    display: block;
+}
+
+.profile-pic {
+    justify-content: center;
+    color: white;
+}
+
+.profile-pic img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 444px) {
+    .buttom-navbar div {
+        font-size: 10px;
+    }
+
+    .add {
+        align-items: flex-start;
+    }
+
+    .subscriptions p:first-of-type {
+        display: none;
+    }
+
+    .subscriptions p:last-of-type {
+        display: block !important;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .sec-1 .more,
+    .sec-2 .voice,
+    .sec-2 input,
+    .sec-3 .create {
+        display: none;
+    }
+
+    .sec-1,
+    .sec-2,
+    .sec-3 {
+        width: auto;
+    }
+
+    .sec-2 {
+        padding: 0;
+    }
+
+    .search-box {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .search-span {
+        width: 30px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .buttom-navbar {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--main-color);
+        width: 100%;
+    }
+
+    .buttom-navbar .home,
+    .buttom-navbar .shorts,
+    .buttom-navbar .subscriptions,
+    .buttom-navbar .profile-pic {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 5);
+        background-color: transparent;
+        gap: 5px;
+    }
+
+    .subscriptions p:last-of-type {
+        display: none;
+    }
+
+}

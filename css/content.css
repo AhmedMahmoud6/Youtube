@@ -100,10 +100,6 @@ section {
 
 .long-videos .video {
     flex: 1 1 calc((100% / 3) - 25px);
-    min-width: 330px;
-    max-width: 390px;
-    min-height: 270px;
-    max-height: 316px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -149,7 +145,7 @@ section {
 
 .short-videos-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
     gap: 10px;
     flex-wrap: wrap;
