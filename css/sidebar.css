@@ -1,0 +1,128 @@
+.aside {
+    width: 230px;
+    height: calc(100vh - 56px);
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+    position: fixed;
+    top: 56px;
+    left: 0;
+}
+
+.side-sec-1,
+.side-sec-2,
+.side-sec-3,
+.side-sec-4,
+.side-sec-5,
+.side-sec-6 {
+    padding: 12px;
+}
+
+.side-sec-6 {
+    margin-bottom: 10px;
+}
+
+.side-sec-2 {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.side-sec-3,
+.side-sec-4,
+.side-sec-5 {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.home,
+.shorts,
+.subscriptions,
+.you,
+.history,
+.playlist,
+.your-videos,
+.watch-later,
+.liked-videos,
+.your-clips,
+.youtuber {
+    padding: 10px 12px;
+    gap: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.you {
+    padding: 12px;
+    font-weight: bold;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.home {
+    background-color: var(--hover-color);
+}
+
+.home:hover {
+    background-color: var(--secondary-hover-color);
+}
+
+.shorts:hover,
+.subscriptions:hover,
+.you:hover,
+.history:hover,
+.playlist:hover,
+.your-videos:hover,
+.watch-later:hover,
+.liked-videos:hover,
+.your-clips:hover,
+.youtuber:hover {
+    background-color: var(--hover-color);
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+.you {
+    color: white;
+}
+
+.categories {
+    color: white;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+.youtuber img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.youtuber p {
+    width: 116px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.live {
+    background-image: url("../assets/live-icon.svg");
+    width: 18px;
+    height: 16px;
+}
+
+.new {
+    width: 5px;
+    height: 5px;
+    background-color: #3ea6ff;
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}

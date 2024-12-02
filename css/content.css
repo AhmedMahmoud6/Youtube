@@ -1,0 +1,276 @@
+.content {
+    display: flex;
+    background-color: var(--main-color);
+    width: 100vw;
+    height: calc(100vh - 56px);
+    position: fixed;
+    top: 56px;
+}
+
+
+section {
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 56px;
+    left: 230px;
+}
+
+.recommendations-bar {
+    width: calc(100% - 230px);
+    height: 56px;
+    background-color: var(--main-color);
+    padding: 0 24px;
+    gap: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+}
+
+.shadow {
+    width: 70px;
+    height: 56px;
+    position: absolute;
+    background-color: #0f0f0f;
+    right: 0;
+    box-shadow: -5px -5px 10px 1px #0f0f0f;
+
+}
+
+.next {
+    background-image: url("../assets/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 10px;
+}
+
+.next:hover {
+    background-color: var(--border-color);
+}
+
+.next div {
+    width: 40px;
+    height: 40px;
+}
+
+.recommendations-bar p {
+    padding: 8px 12px;
+    background-color: var(--hover-color);
+    border-radius: 8px;
+    text-wrap: nowrap;
+}
+
+.recommendations-bar p:first-child {
+    color: var(--main-color);
+    background-color: white;
+}
+
+.recommendations-bar p:not(:first-child):hover {
+    background-color: var(--border-color);
+}
+
+.videos-container {
+    width: calc(100vw - 230px);
+    height: calc(100vh - 112px);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 50px;
+    overflow: auto;
+    padding: 23px;
+}
+
+.long-videos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    flex-shrink: 0;
+}
+
+.long-videos .video {
+    flex: 1 1 calc((100% / 3) - 25px);
+    min-width: 330px;
+    max-width: 390px;
+    min-height: 270px;
+    max-height: 316px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.short-videos {
+    min-height: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.short-icon {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.short-logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    gap: 10px;
+
+}
+
+.short-cancle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.short-cancle:hover {
+    background-color: var(--border-color);
+}
+
+.short-videos-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.short-videos-container .video {
+    flex: 1;
+    height: 100%;
+    min-width: 200px;
+    max-width: 245px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.long-videos .video-img {
+    width: 100%;
+    min-height: auto;
+    max-height: 70%;
+    border-radius: 10px;
+}
+
+.long-videos .video img {
+    width: 100%;
+    height: 100%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.video-more {
+    width: 24px;
+    height: 24px;
+}
+
+.video-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.video-text h4 {
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+    color: white;
+}
+
+.video-text p {
+    color: #aaaaaa;
+}
+
+.video-description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.channel-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.channel-img img {
+    border-radius: 50%;
+}
+
+.short-video-img {
+    width: 100%;
+    height: 80%;
+}
+
+.short-video-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.short-video-text {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.short-video-more {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.short-video-more:hover {
+    background-color: var(--border-color);
+}
+
+.short-video-more img {
+    object-fit: scale-down;
+}
+
+.video-title {
+    color: white;
+}
+
+.video-title p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.short-video-description {
+    color: #aaaaaa;
+}

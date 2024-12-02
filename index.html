@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/youtube-32x32.png">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <title>Youtube</title>
+</head>
+
+<body>
+    <div class="page">
+        <nav>
+            <div class="sec-1 flex">
+                <div class="more hovered">
+                    <img src="assets/menu.svg" alt="more icon">
+                </div>
+                <div class="logo hovered">
+                    <img src="assets/youtube-logo-icon.svg" alt="youtube logo">
+                </div>
+            </div>
+
+            <div class="sec-2 flex">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <div class="search-span hovered tooltip" data-title="Search"></div>
+                </div>
+
+                <div class="voice hovered tooltip" data-title="Search with your voice">
+                    <img src="assets/voice.svg" alt="Search with your voice">
+                </div>
+            </div>
+
+            <div class="sec-3 flex">
+                <div class="create hovered tooltip" data-title="Create">
+                    <img src="assets/create-video.svg" alt="create video icon">
+                </div>
+
+                <div class="notifications hovered tooltip" data-title="Notifications">
+                    <img src="assets/notifications-icon.svg" alt="notifications icon">
+                </div>
+
+                <div class="profile hovered">
+                    <img src="assets/profile-pic.jpg" alt="profile icon">
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="aside">
+                <div class="side-sec-1">
+                    <div class="home flex hovered" title="Home">
+                        <img src="assets/home-icon.svg" alt="home icon">
+                        <p>Home</p>
+                    </div>
+
+                    <div class="shorts flex hovered" title="Shorts">
+                        <img src="assets/shorts-icon-outline.svg" alt="shorts icon">
+                        <p>Shorts</p>
+                    </div>
+
+                    <div class="subscriptions flex hovered" title="Subscriptions">
+                        <img src="assets/subscriptions-icon.svg" alt="subscriptions icon">
+                        <p>Subscriptions</p>
+                    </div>
+                </div>
+
+                <div class="side-sec-2">
+                    <div class="you flex hovered" title="You">
+                        <img src="assets/profile-icon.svg" class="hidden" alt="user icon">
+                        <p>You</p>
+                        <img src="assets/arrow-right.svg" alt="subscriptions icon">
+                    </div>
+
+                    <div class="history flex hovered" title="History">
+                        <img src="assets/history-icon.svg" alt="subscriptions icon">
+                        <p>History</p>
+                    </div>
+
+                    <div class="playlist flex hovered" title="Playlist">
+                        <img src="assets/playlist-icon.svg" alt="subscriptions icon">
+                        <p>Playlist</p>
+                    </div>
+
+                    <div class="your-videos flex hovered" title="Your videos">
+                        <img src="assets/your-videos-icon.svg" alt="subscriptions icon">
+                        <p>Your videos</p>
+                    </div>
+
+                    <div class="watch-later flex hovered" title="Watch later">
+                        <img src="assets/watch-later-icon.svg" alt="subscriptions icon">
+                        <p>Watch later</p>
+                    </div>
+
+                    <div class="liked-videos flex hovered" title="Liked videos">
+                        <img src="assets/liked-videos-icon.svg" alt="subscriptions icon">
+                        <p>Liked videos</p>
+                    </div>
+
+                    <div class="your-clips flex hovered" title="Your clips">
+                        <img src="assets/your-clips-icon.svg" alt="subscriptions icon">
+                        <p>Your clips</p>
+                    </div>
+                </div>
+
+                <div class="side-sec-3">
+                    <p class="categories">Subscriptions</p>
+
+                    <div class="youtuber flex hovered" title="No Text To Speech">
+                        <img src="assets/no-text-to-speech.jpg" alt="subscriptions icon">
+                        <p>No Text To Speech</p>
+                        <div class="live"></div>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Unity">
+                        <img src="assets/unity-icon.jpg" alt="subscriptions icon">
+                        <p>Unity</p>
+                        <div class="live"></div>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="SNOWAR-GAMING">
+                        <img src="assets/snow-ar.jpg" alt="subscriptions icon">
+                        <p>SNOWAR-GAMING</p>
+                        <div class="new"></div>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Elzero Web School">
+                        <img src="assets/elzero.jpg" alt="subscriptions icon">
+                        <p>Elzero Web School</p>
+                        <div class="new"></div>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Yahya Azzam - يحيى عزام ">
+                        <img src="assets/yaya.jpg" alt="subscriptions icon">
+                        <p>Yahya Azzam - يحيى عزام </p>
+                        <div class="new"></div>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Fireship ">
+                        <img src="assets/fireship.jpg" alt="subscriptions icon">
+                        <p>Fireship</p>
+                        <div class="new"></div>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="MahmoudIsmailTV ">
+                        <img src="assets/mahmoud-ismail.jpg" alt="subscriptions icon">
+                        <p>MahmoudIsmailTV</p>
+                        <div class="new"></div>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Show More">
+                        <img src="assets/arrow-down.svg" alt="subscriptions icon">
+                        <p>Show More</p>
+                    </div>
+                </div>
+
+                <div class="side-sec-4">
+                    <p class="categories">Explore</p>
+
+                    <div class="youtuber flex hovered" title="Trending">
+                        <img src="assets/trending.svg" alt="subscriptions icon">
+                        <p>Trending</p>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Live">
+                        <img src="assets/live.svg" alt="subscriptions icon">
+                        <p>Live</p>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Gaming">
+                        <img src="assets/gaming.svg" alt="subscriptions icon">
+                        <p>Gaming</p>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Sports">
+                        <img src="assets/sports.svg" alt="subscriptions icon">
+                        <p>Sports</p>
+                    </div>
+                </div>
+
+                <div class="side-sec-5">
+                    <p class="categories">More from YouTube</p>
+
+                    <div class="youtuber flex hovered" title="YouTube Premium">
+                        <img src="assets/youtube-icon.svg" alt="subscriptions icon">
+                        <p>YouTube Premium</p>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="YouTube Studio">
+                        <img src="assets/youtube-studio.svg" alt="subscriptions icon">
+                        <p>YouTube Studio</p>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="YouTube Kids">
+                        <img src="assets/youtube-kids.svg" alt="subscriptions icon">
+                        <p>YouTube Kids</p>
+                    </div>
+
+                </div>
+
+                <div class="side-sec-6">
+                    <div class="youtuber flex hovered" title="Settings">
+                        <img src="assets/settings.svg" alt="subscriptions icon">
+                        <p>Settings</p>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Report history">
+                        <img src="assets/report.svg" alt="subscriptions icon">
+                        <p>Report history</p>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Help">
+                        <img src="assets/help.svg" alt="subscriptions icon">
+                        <p>Help</p>
+                    </div>
+
+                    <div class="youtuber flex hovered" title="Send Feedback">
+                        <img src="assets/feedback.svg" alt="subscriptions icon">
+                        <p>Send Feedback</p>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="recommendations-bar">
+                    <p class="hovered">All</p>
+                    <p class="hovered">Gaming</p>
+                    <p class="hovered">Podcasts</p>
+                    <p class="hovered">Source Code</p>
+                    <p class="hovered">Audio Commentaries</p>
+                    <p class="hovered">Computers</p>
+                    <p class="hovered">Live</p>
+                    <p class="hovered">History</p>
+                    <p class="hovered">Cats</p>
+                    <p class="hovered">Gadgets</p>
+                    <p class="hovered">Belief</p>
+                    <p class="hovered">Action-adventure games</p>
+                    <p class="hovered">Animated films</p>
+                    <p class="hovered">MMO Game</p>
+                    <p class="hovered">Recently uploaded</p>
+                    <p class="hovered">Watched</p>
+                    <p class="hovered">New to you</p>
+                    <span class="shadow"></span>
+                    <div class="next hovered">
+                        <div class="tooltip" data-title="Next"></div>
+                    </div>
+                </div>
+
+                <div class="videos-container">
+                    <div class="long-videos">
+                        <div class="video hovered">
+
+                            <div class="video-img">
+                                <img src="assets/yaya-thumbnail.webp" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/yaya-channel.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>لما اشتغلت امين مخزن || قصة مش مهم تسمعها</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>Yahya Azzam - يحي عزام</p>
+                                            <p>133K views • 2 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/unitywebp.webp" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/sakura.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>Unity3D Spatial Transformations</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>Sakura Rabbit</p>
+                                            <p>7.2K views • 1 day ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/no-text-to-speech-thumbnail.jpg" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/no-text-to-speech-channel.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>PSA: Discord added a New Raid and Scamming Method...</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>No Text To speech</p>
+                                            <p>160K views • 20 hours ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/marvel-rivals.jpg" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/ign.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>Marvel Rivals - Official Intergalactic Empire of Wakanda: Star Rising
+                                                Map Reveal Trailer</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>IGN</p>
+                                            <p>41 K views • 8 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/uncharted.webp" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/uncharted-channel.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>This Is The Greatest Project Ever</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>Clydiie</p>
+                                            <p>259K views • 3 months ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/gaming-for.webp" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/gaming-for-channel.webp" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>What Games Are Like For Someone Who Doesnt Play Games</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>Razbuten</p>
+                                            <p>15M views • 5 years ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="short-videos">
+
+                        <div class="short-icon">
+                            <div class="short-logo">
+                                <img src="assets/shorts-icon.svg" alt="youtube shorts icon">
+                                <p>Shorts</p>
+                            </div>
+                            <div class="short-cancle hovered tooltip-left" data-title="Not interested">
+                                <img src="assets/short-cancel.svg" alt="short videos cancel">
+                            </div>
+                        </div>
+
+                        <div class="short-videos-container">
+                            <div class="video hovered">
+                                <div class="short-video-img">
+                                    <img src="assets/short-thumbnail-1.webp" alt="video thumbnail">
+                                </div>
+
+                                <div class="short-video-info">
+                                    <div class="video-container">
+
+                                        <div class="short-video-text">
+                                            <div class="video-title">
+                                                <p>Too Sleepy To Do Homework 💤</p>
+                                            </div>
+                                            <div class="short-video-description">
+                                                <p>6.2M views</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="short-video-more">
+                                            <img src="assets/more.svg" alt="more icon">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="video hovered">
+                                <div class="short-video-img">
+                                    <img src="assets/short-thumbnail-2.webp" alt="video thumbnail">
+                                </div>
+
+                                <div class="short-video-info">
+                                    <div class="video-container">
+
+                                        <div class="short-video-text">
+                                            <div class="video-title">
+                                                <p>Best Sleeping Buddy 💤</p>
+                                            </div>
+                                            <div class="short-video-description">
+                                                <p>6.2M views</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="short-video-more">
+                                            <img src="assets/more.svg" alt="more icon">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="video hovered">
+                                <div class="short-video-img">
+                                    <img src="assets/short-thumbnail-3.webp" alt="video thumbnail">
+                                </div>
+
+                                <div class="short-video-info">
+                                    <div class="video-container">
+
+                                        <div class="short-video-text">
+                                            <div class="video-title">
+                                                <p>Why do i have to scream to find her</p>
+                                            </div>
+                                            <div class="short-video-description">
+                                                <p>930K views</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="short-video-more">
+                                            <img src="assets/more.svg" alt="more icon">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="video hovered">
+                                <div class="short-video-img">
+                                    <img src="assets/short-thumbnail-4.webp" alt="video thumbnail">
+                                </div>
+
+                                <div class="short-video-info">
+                                    <div class="video-container">
+
+                                        <div class="short-video-text">
+                                            <div class="video-title">
+                                                <p>Time goes so fast !</p>
+                                            </div>
+                                            <div class="short-video-description">
+                                                <p>749K views</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="short-video-more">
+                                            <img src="assets/more.svg" alt="more icon">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="video hovered">
+                                <div class="short-video-img">
+                                    <img src="assets/short-thumbnail-5.webp" alt="video thumbnail">
+                                </div>
+
+                                <div class="short-video-info">
+                                    <div class="video-container">
+
+                                        <div class="short-video-text">
+                                            <div class="video-title">
+                                                <p>Sleepy Kitten</p>
+                                            </div>
+                                            <div class="short-video-description">
+                                                <p>4.2M views</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="short-video-more">
+                                            <img src="assets/more.svg" alt="more icon">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="video hovered">
+                                <div class="short-video-img">
+                                    <img src="assets/short-thumbnail-6.webp" alt="video thumbnail">
+                                </div>
+
+                                <div class="short-video-info">
+                                    <div class="video-container">
+
+                                        <div class="short-video-text">
+                                            <div class="video-title">
+                                                <p>Cloth vs Glass 🔥👔</p>
+                                            </div>
+                                            <div class="short-video-description">
+                                                <p>6.2M views</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="short-video-more">
+                                            <img src="assets/more.svg" alt="more icon">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="video hovered">
+                                <div class="short-video-img">
+                                    <img src="assets/short-thumbnail-7.jpg" alt="video thumbnail">
+                                </div>
+
+                                <div class="short-video-info">
+                                    <div class="video-container">
+
+                                        <div class="short-video-text">
+                                            <div class="video-title">
+                                                <p>Highest Rope Swing Drop</p>
+                                            </div>
+                                            <div class="short-video-description">
+                                                <p>27M views</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="short-video-more">
+                                            <img src="assets/more.svg" alt="more icon">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="video hovered">
+                                <div class="short-video-img">
+                                    <img src="assets/short-thumbnail-8.webp" alt="video thumbnail">
+                                </div>
+
+                                <div class="short-video-info">
+                                    <div class="video-container">
+
+                                        <div class="short-video-text">
+                                            <div class="video-title">
+                                                <p>Cats are really affectionate, aren't they?</p>
+                                            </div>
+                                            <div class="short-video-description">
+                                                <p>810K views</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="short-video-more">
+                                            <img src="assets/more.svg" alt="more icon">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="video hovered">
+                                <div class="short-video-img">
+                                    <img src="assets/short-thumbnail-9.webp" alt="video thumbnail">
+                                </div>
+
+                                <div class="short-video-info">
+                                    <div class="video-container">
+
+                                        <div class="short-video-text">
+                                            <div class="video-title">
+                                                <p>Making a ball of perfectly clear ice</p>
+                                            </div>
+                                            <div class="short-video-description">
+                                                <p>18M views</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="short-video-more">
+                                            <img src="assets/more.svg" alt="more icon">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="long-videos">
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/elzero-amazon.webp" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/elzero-channel.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>عاوز اعمل موقع زي امازون</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>Elzero Web School</p>
+                                            <p>32K views • 3 days</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/blender.webp" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/blender-channel.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>Blender 4.3 Is Here - How Is All This Free?!</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>Two Minutes Paper</p>
+                                            <p>3.2 views • 6 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/lethal.jpg" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/lethal-channel.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>The New Lethal Company Update is Wild</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>SMii7Yplus</p>
+                                            <p>3.6M views • 2 months ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/parkour.jpg" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/ign.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>STORROR Parkour Pro - Official Reveal Trailer</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>IGN</p>
+                                            <p>278K views • 3 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/vfx.jpg" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/unity-channel.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>VFX Graph Learning Tempelates | Tutorial</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>Unity</p>
+                                            <p>6.9K views • 2 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="video hovered">
+                            <div class="video-img">
+                                <img src="assets/hacker.jpg" alt="video thumbnail">
+                            </div>
+
+                            <div class="video-info">
+                                <div class="video-container">
+                                    <div class="channel-img">
+                                        <img src="assets/hacker-channel.jpg" alt="channel img">
+                                    </div>
+
+                                    <div class="video-text">
+                                        <div class="video-title">
+                                            <h4>How a Hacker Saved The Internet</h4>
+                                        </div>
+                                        <div class="video-description">
+                                            <p>fern</p>
+                                            <p>2.2M views • 1 month ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="video-more">
+                                        <img src="assets/more.svg" alt="more icon">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
