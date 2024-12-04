@@ -12,6 +12,10 @@
         left: 0;
     }
 
+    .long-videos:last-of-type {
+        margin-bottom: 50px;
+    }
+
     .long-videos .video {
         flex: 1 1 calc((100% / 1) - 25px);
     }
