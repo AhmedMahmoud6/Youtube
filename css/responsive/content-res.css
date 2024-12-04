@@ -1,6 +1,6 @@
 @media (max-width: 330px) {
     .video-text h4 {
-        width: 245px;
+        width: 244px;
     }
 }
 
@@ -13,7 +13,7 @@
     }
 
     .long-videos:last-of-type {
-        margin-bottom: 50px;
+        margin-bottom: 75px;
     }
 
     .long-videos .video {
